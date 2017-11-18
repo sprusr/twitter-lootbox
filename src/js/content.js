@@ -15,6 +15,17 @@ coinsNode.innerHTML = `
   </div>`
 navContainer.insertBefore(coinsNode, nav)
 
+let congratsNode = document.createElement('div')
+congratsNode.setAttribute('class', 'congrats')
+congratsNode.innerHTML = `
+  <div class="congrats-container">
+    <h1>Congrats</h1>
+    <p>You reached level <span class="congrats-level">0</span></p>
+    <p><a href="#" class="congrats-close">Close</a></p>
+  </div>`
+document.body.appendChild(congratsNode)
+document.querySelector('.congrats-close').addEventListener('click', closeLevelUp)
+
 let points = 0, coins = 0, jewels = 300, level = 0;
 
 // Likes
@@ -54,7 +65,12 @@ function handleReply(e) {
 }
 
 function levelUp() {
-  alert('Congrats you reached level ' + level)
+  document.querySelector('.congrats-level').textContent = level
+  congratsNode.style.display = 'block'
+}
+
+function closeLevelUp() {
+  congratsNode.style.display = 'none'
 }
 
 function updatePoints() {

@@ -35,7 +35,7 @@
 }
 
 .coin-progress[value]::-webkit-progress-value {
-  background-color: rgb(47, 167, 235);
+  background-color: #2fa7eb;
   border-radius: 7px;
 }
 
@@ -55,13 +55,13 @@
 
 .coin-count {
   display: flex;
-  color: rgb(230, 209, 23);
+  color: #e6d117;
   padding-right: 10px;
 }
 
 .jewel-count {
   display: flex;
-  color: rgb(25, 180, 230);
+  color: #19b4e6;
   padding-right: 10px;
 }
 
@@ -83,4 +83,27 @@
   height: 18px;
   display: block;
   margin: 0 5px;
+}
+
+.congrats {
+  color: #414141;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(20, 20, 20, 0.7);
+}
+
+.congrats-container {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #c3c3c3;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 80px;
 }
