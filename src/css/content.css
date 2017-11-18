@@ -1,0 +1,86 @@
+.bird-topbar-etched {
+  position: static !important;
+  float: left !important;
+  display: inline-block !important;
+  padding: 0 20px !important;
+}
+
+.nav-extras {
+  padding-right: 20px;
+}
+
+.global-nav-inner > .container {
+  max-width: 100%;
+}
+
+.coins {
+  height: 47px;
+  display: flex;
+  float: left;
+}
+
+.coin-progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 250px;
+  height: 14px;
+  margin-top: 17px;
+  margin-right: 10px;
+}
+
+.coin-progress[value]::-webkit-progress-bar {
+  background-color: #525252;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.coin-progress[value]::-webkit-progress-value {
+  background-color: rgb(47, 167, 235);
+  border-radius: 7px;
+}
+
+.coin-level {
+  line-height: 47px;
+  position: relative;
+  left: -240px;
+  color: #fff;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.coin-values {
+  position: relative;
+  display: flex;
+}
+
+.coin-count {
+  display: flex;
+  color: rgb(230, 209, 23);
+  padding-right: 10px;
+}
+
+.jewel-count {
+  display: flex;
+  color: rgb(25, 180, 230);
+  padding-right: 10px;
+}
+
+.count {
+  display: block;
+  line-height: 47px;
+  font-weight: bold;
+}
+
+.coin-icon {
+  padding-top: 15px;
+  height: 20px;
+  display: block;
+  margin: 0 5px;
+}
+
+.jewel-icon {
+  padding-top: 16px;
+  height: 18px;
+  display: block;
+  margin: 0 5px;
+}
